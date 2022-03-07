@@ -11,4 +11,7 @@ data = requests.get(url).content
 img = io.BytesIO(data)
 ctimg = ColorThief(img)
 dominant_color = ctimg.get_color(quality=1)
-r, g, b = dominant_color[0], dominant_color[1], dominant_color[2]
+
+# or if your not using an url
+color_thief = ColorThief('/path/to/image')
+dominant_color = color_thief.get_color(quality=1)
