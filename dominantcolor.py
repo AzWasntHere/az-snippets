@@ -1,8 +1,10 @@
+# get the dominant color of an image
+
 import urllib.request, io, requests, colorthief
 from colorthief import ColorThief
 from PIL import Image
 
-url = inter.author.display_avatar.url
+url = URL
 data = requests.get(url).content
 img = io.BytesIO(data)
 ctimg = ColorThief(img)
