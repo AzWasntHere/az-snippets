@@ -4,7 +4,7 @@ import urllib.request, io, requests, colorthief
 from colorthief import ColorThief
 from PIL import Image
 
-#change URL with an url, if you are using a discord library, just replace URL with an avatar url or smt
+#replace URL with a valid image url (the ones ending in something like .png or .jpg (MAYBE gifs))
 
 url = URL
 data = requests.get(url).content
